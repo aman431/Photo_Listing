@@ -1,0 +1,22 @@
+.navbar1{
+    height: 55px;
+    background-color: rgb(70, 67, 67);
+}
+.navbar1_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.navbar1_item li {
+    list-style: none;
+    font-size: 30px;
+    color: white;
+}
+.navbar1_item li .list{
+    color: white;
+    text-decoration: none;
+}
