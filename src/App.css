@@ -4,5 +4,6 @@
 }
 .image1{
   position: relative;
+  width: 100%;
 	background: no-repeat center center/cover;
 }

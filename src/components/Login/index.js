@@ -33,7 +33,7 @@ function Index({}){
     },[]);
 
     return (
-      <div style={{display:'flex', justifyContent:'center', marginTop:'25%'}}>
+      <div style={{display:'flex', justifyContent:'center', marginTop:'25%', height: '100vh'}}>
       <Container>
         <div style={{display:'flex', flexDirection:'row', justifyContent:'center', width:'400px',height:'50px' ,backgroundColor:'black', borderRadius:'6px'}}>
           <Avatar

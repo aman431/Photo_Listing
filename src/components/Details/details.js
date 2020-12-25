@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux';
 import Time from '../repository/Time';
 import Navbar from '../Navbar/index'
+import { Link } from 'react-router-dom';
 function Details({ details, loading }) {
     return !loading && details === undefined ? (
         <>
@@ -31,19 +32,25 @@ function Details({ details, loading }) {
                                 {details.name}
                             </td>
                             <td>
-                                {details.html_url}
+                                <a to={details.html_url}>
+                                    {details.html_url}
+                                </a>
                             </td>
                             <td>
                                 {details.description}
                             </td>
                             <td>
-                                {details.collaborators_url}
+                                <a href={details.html_url}>
+                                    {details.collaborators_url}
+                                </a>
                             </td>
                             <td>
                                 <Time time={details.created_at} />
                             </td>
                             <td>
-                                {details.issues_url}
+                                <a href={details.html_url}>
+                                    {details.issues_url}
+                                </a>
                             </td>
                         </tr>
                     </tbody>
