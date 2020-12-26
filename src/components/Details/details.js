@@ -32,7 +32,7 @@ function Details({ details, loading }) {
                                 {details.name}
                             </td>
                             <td>
-                                <a to={details.html_url}>
+                                <a href={details.html_url}>
                                     {details.html_url}
                                 </a>
                             </td>
